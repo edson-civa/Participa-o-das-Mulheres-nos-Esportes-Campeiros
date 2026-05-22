@@ -349,7 +349,7 @@ button{
 
 .sports-section{
 
-  background-color: #e7d8c7;
+  background-color: #bbb0a4;
 
   color: #2a1d18;
 
@@ -400,6 +400,7 @@ button{
   scroll-snap-type: x mandatory;
 
   padding-bottom: 10px;
+  align-items: stretch;
 }
 
 
@@ -427,20 +428,26 @@ button{
 
 .sport-card{
 
-  min-width: 360px;
+    min-width: 360px;
+    max-width: 600px;
 
-  background-color: #f3e7d9;
+    background-color: #f3e7d9;
 
-  border: 1px solid rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.08);
 
-  overflow: hidden;
+    overflow: hidden;
 
-  scroll-snap-align: start;
+    scroll-snap-align: start;
 
-  transition: 0.4s;
+    transition: 0.4s;
 
-  box-shadow:
-    0 15px 40px rgba(0,0,0,0.08);
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    flex-shrink: 0;
 }
 
 
@@ -468,6 +475,7 @@ button{
 
   object-fit: cover;
 
+  object-position: left center;
   transition: 0.5s;
 }
 
@@ -483,6 +491,10 @@ button{
 .sport-content{
 
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
 }
 
 
@@ -533,6 +545,7 @@ button{
   cursor: pointer;
 
   transition: 0.3s;
+  margin-top: auto;
 }
 
 
@@ -557,6 +570,13 @@ button{
     font-size: 3.5rem;
     line-height: 65px;
   }
+
+.hero{
+
+    background-position: 40% center;
+
+  }
+
 
   .buttons{
     flex-direction: column;
@@ -607,6 +627,7 @@ button{
 
   .sport-card{
 
-    min-width: 85%;
+    min-width: 55%;
+    max-width: 90%;
   }
 }
