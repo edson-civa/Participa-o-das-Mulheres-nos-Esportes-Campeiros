@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
+<script>
+  document.documentElement.classList.add('preload');
+</script>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +32,7 @@
     <nav>
       <a href="#">Início</a>
       <a href="#">Pesquisa</a>
-      <a href="#">Modalidades</a>
+      <a href="#esportes" class="nav-link">Modalidades</a>
       <a href="#">História</a>
     </nav>
 
@@ -47,14 +52,13 @@
       </span>
 
       <h1>
-        A FORÇA <br>
-        QUE VEM <br>
-        DO CAMPO
+        ENTRE <br>
+        JOGOS E <br>
+        MEMÓRIAS
       </h1>
 
       <p>
-        A presença feminina nos esportes campeiros representa tradição,
-        resistência e transformação dentro da cultura gaúcha.
+        A participação feminina nos esportes campeiros entre cultura, resistência e pertencimento
       </p>
 
       <div class="buttons">
@@ -63,9 +67,9 @@
           Conhecer pesquisa
         </button>
 
-        <button class="secondary-btn">
+        <a href="#esportes" class="secondary-btn nav-link">
           Explorar modalidades
-        </button>
+        </a>
 
       </div>
 
@@ -90,9 +94,9 @@
         </h2>
 
         <p>
-        Relatos, registros e entrevistas que mostram a presença das mulheres
-        nos esportes campeiros, destacando desafios, conquistas e a transformação
-        desse cenário ao longo do tempo.
+        Relatos e registros que mostram a presença das mulheres nos esportes 
+        campeiros, como a bocha campeira, destacando desafios, preconceitos 
+        ainda existentes, conquistas e as transformações desse cenário ao longo do tempo.
         </p>
 
     </div>
@@ -125,7 +129,7 @@
       <span>Sobre a pesquisa</span>
 
       <h2>
-        A participação feminina no cenário campeiro
+        Conceito e origem dos Esportes Campeiros
       </h2>
 
     </div>
@@ -135,23 +139,30 @@
       <div class="about-text">
 
         <p>
-          Durante muitos anos, os esportes campeiros foram vistos como ambientes
-          predominantemente masculinos. Entretanto, a presença das mulheres
-          cresceu significativamente, ocupando espaços de destaque em provas,
-          competições e manifestações culturais tradicionalistas.
+          Os esportes campeiros constituem um conjunto de práticas culturais 
+          vinculadas ao cotidiano do homem do campo, surgidas a partir das 
+          atividades rurais, dos momentos de convivência e das formas de lazer 
+          desenvolvidas no meio campeiro. Mais do que simples competições, essas 
+          práticas representam manifestações tradicionais que preservam costumes, 
+          valores e saberes transmitidos entre gerações dentro de nossa cultura.
         </p>
 
         <p>
-          Esta pesquisa busca apresentar a trajetória feminina dentro desse
-          universo, valorizando histórias, desafios e conquistas que ajudaram a
-          transformar o cenário campeiro ao longo do tempo.
+          Sua origem está relacionada ao processo histórico de formação do sul do 
+          Brasil, marcado pela influência de diferentes povos, como indígenas, 
+          colonizadores ibéricos e imigrantes europeus, que contribuíram para a 
+          construção das práticas recreativas e culturais presentes no território 
+          gaúcho. Inicialmente realizadas de maneira espontânea entre trabalhadores 
+          rurais, essas atividades passaram, ao longo do tempo, a integrar encontros 
+          tradicionalistas, torneios e competições organizadas, consolidando-se como 
+          importantes expressões da identidade cultural do Rio Grande do Sul.
         </p>
 
       </div>
 
       <div class="about-image">
 
-        <img src="img/mulher.jpeg" alt="Mulher campeira">
+        <img src="img/truco-antigo.png" alt="Mulher campeira">
 
       </div>
 
@@ -163,7 +174,7 @@
      MODALIDADES CAMPEIRAS
 ========================= -->
 
-<section class="sports-section">
+<section class="sports-section" id="esportes">
 
   <div class="sports-header">
 
@@ -225,9 +236,9 @@
               meio da fala quanto de sinais
             </p>
 
-            <button>
+            <a href="esportes/truco-cego.html" class="sport-button">
               Saiba mais
-            </button>
+            </a>
 
           </div>
 
@@ -263,9 +274,9 @@
 
             </p>
 
-            <button>
+            <a href="esportes/jogo-de-solo.html" class="sport-button">
               Saiba mais
-            </button>
+            </a>
 
           </div>
 
@@ -300,9 +311,9 @@
               derrubar peças posicionadas sobre um cepo (base circular de madeira).
             </p>
             
-            <button>
+            <a href="esportes/bocha-48.html" class="sport-button">
               Saiba mais
-            </button>
+            </a>
             
           </div>
           
@@ -332,9 +343,9 @@
               relacionado às práticas do antigo Império Persa e da Grécia.
             </p>
 
-            <button>
+            <a href="esportes/jogo-do-osso.html" class="sport-button">
               Saiba mais
-            </button>
+            </a>
 
           </div>
 
@@ -365,9 +376,9 @@
               as manilhas), refletindo a influência do baralho espanhol e da cultura platina 
             </p>
 
-            <button>
+            <a href="esportes/truco-amostra.html" class="sport-button">
               Saiba mais
-            </button>
+            </a>
 
           </div>
 
@@ -399,16 +410,48 @@
               do adversário, respeitando os limites da cancha.
             </p>
 
-            <button>
+            <a href="esportes/bocha-campeira.html" class="sport-button">
               Saiba mais
-            </button>
+            </a>
 
           </div>
 
         </div>
 
 
+        <div class="sport-card">
 
+          <div class="sport-image">
+
+            <img src="img/tetarfe.jpeg" alt="tetarfe">
+
+          </div>
+
+          <div class="sport-content">
+
+            <span class="sport-category">
+              Modalidade Tradicional
+            </span>
+
+            <h3>
+              TETARFE
+            </h3>
+
+            <p>
+              A modalidade de jogo reconhecida pela sigla TETARFE inclui os 
+              jogos de Tejo, da Tava, da Argola e da Ferradura. O Tejo é um 
+              jogo de origem espanhola, considerado um dos mais antigos praticados 
+              no Rio Grande do Sul, havendo registros de sua prática por volta do 
+              ano de 1768, na cidade de Rio Grande.
+            </p>
+
+            <a href="esportes/tetarfe.html" class="sport-button">
+              Saiba mais
+            </a>
+
+          </div>
+
+        </div>
 
 
 
@@ -423,6 +466,7 @@
 
 </section>
 
+<script src="script/main.js"></script>
 <script src="script/script.js"></script>
 </body>
 
